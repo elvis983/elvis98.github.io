@@ -5,142 +5,127 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 20px;
+  padding: 12px;
+  margin: 0;
 }
 .sub {
   color: black;
   text-align: center;
-  position: relative;
   font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  top: -40px;
-  left: 60px;
+  font-size: clamp(14px, 3vw, 2px);
+  margin-top: -10px;
 }
 
-h1 {
-  text-align: center;
-  color: rgb(233, 240, 233);
-  font-size: 60px;
-  margin: 0;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  -webkit-text-stroke: 0.1px black;
-  text-shadow: 5px 5px 5px #3cd746;
-}
+h1,
 h2 {
   text-align: center;
   color: rgb(233, 240, 233);
-  font-size: 60px;
   margin: 0;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   -webkit-text-stroke: 0.1px black;
-  text-shadow: 5px 5px 5px #0e0b0b;
 }
-.li{
-  font-size:25px;
-  margin: 0;
+h1 {
+  font-size: clamp(28px, 6vw, 60px);
+  text-shadow: 0 0 10px #3cd746;
+}
+h2 {
+  font-size: clamp(22px, 5vw, 48px);
+  text-shadow: 0 0 10px #000;
+}
+.li {
+  font-size: clamp(16px, 3.5vw, 22px);
   color: rgb(166, 165, 185);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+  margin-top: 15px;
 }
 .card {
-  background: rgba(29, 186, 42, 0.4);
-  border-radius: 12px;
-  padding: 20px;
+  background: rgba(29, 186, 42, 0.35);
+  border-radius: 16px;
+  padding: 12px;
   text-align: center;
-  box-shadow: 5px 5px 5px rgb(11, 11, 27);
+  box-shadow: 0 0 14px rgb(0,255,100,0.4 );
+  backdrop-filter: blur(6px);
+  transition: transform .25s;
+}
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card img {
   width: 100%;
-  height: 250px;
+  height: 160px;
   object-fit: cover;
-  border-radius: 19px;
+  border-radius: 12px;
 }
 .precio {
-  margin: 10px;
+  margin: 8px;
   color: rgb(213, 163, 24);
-  font-size: 20px;
+  font-size: clamp(16px, 4vw, 20px);
 }
 
 button {
-  padding: 8px 12px;
+  padding: 10px 14px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  margin: 4px;
+  margin: 5px;
+  font-size: 14px;
+  min-width: 90px;
 }
 
-.add {
-  background: white;
-  color: rgb(10, 9, 9);
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.add, .del, .pay {
+   transition: all 0.25s ease;
 }
 .add:hover {
-  background-color: rgb(12, 206, 28);
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+background:#1aff00 ;
+  transform: scale(1.08);
+  
 }
-.del {
-  background: rgb(240, 227, 229);
-  color: black;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+
 .del:hover {
-  background: #e74c3c;
+   background: #e74c3c;
   color: white;
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.08);
 }
-.pay {
-  background: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+
 .pay:hover {
   background: #d1db0c;
-  color: white;
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.08);
 }
 
 #carritoBox,
 #adminBox,
 #loginBox,
 #facturaBox {
-  background: rgba(200, 7, 7, 0.4);
-  margin-top: 30px;
-  padding: 20px;
-  border-radius: 12px;
+  background: rgba(0,0,0,0.55);
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 14px;
+  box-shadow: 0 0 18px rgba(0,255,120,0.3);
 }
 .content {
-  width: 50%;
-  justify-self: center;
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px #161414;
+   border-radius: 18px;
+  box-shadow: 0 0 20px #161414;
   text-align: center;
   background-color: #0e0b0b;
+  padding: 15px;
 }
 
 input {
   display: block;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 10px;
   border: 1px solid #3b5238;
-  width: 60%;
-  margin-bottom: 10px;
+  width: 90%;
   max-width: 400px;
-  margin: 20px auto;
-  box-shadow: 5px 5px 5px green;
+  margin: 12px auto;
+  box-shadow: 0 0 10px green;
+  font-size: 16px;
 }
 
 .hidden {
