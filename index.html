@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Tienda Virtual</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/script/script.js"></script>
+</head>
+
+<body>
+
+
+
+  <!-- TIENDA -->
+  <div id="tienda">
+
+
+    <input id="busqueda" placeholder="Busca tu bolito..." oninput="filtrar()">
+
+
+    <div class="grid" id="productos"></div>
+    <div class="content">
+
+      <div id="carritoBox">
+        <h2>Carrito 🛒</h2>
+        <h3 class="to"><span id="total"></span></h3>
+        <ul id="carrito"></ul>
+        <button onclick="vaciar()" class="del">Vaciar Carrito</button>
+        <button onclick="pagar()" class="pay">Enviar</button>
+      </div>
+    </div>
+  </div>
+</body>

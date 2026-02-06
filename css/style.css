@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("/ima/ima1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+}
+.sub {
+  color: black;
+  text-align: center;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  top: -40px;
+  left: 60px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(233, 240, 233);
+  font-size: 60px;
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-text-stroke: 0.1px black;
+  text-shadow: 5px 5px 5px #3cd746;
+}
+h2 {
+  text-align: center;
+  color: rgb(233, 240, 233);
+  font-size: 60px;
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  -webkit-text-stroke: 0.1px black;
+  text-shadow: 5px 5px 5px #0e0b0b;
+}
+.li{
+  font-size:25px;
+  margin: 0;
+  color: rgb(166, 165, 185);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: rgba(29, 186, 42, 0.4);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgb(11, 11, 27);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 19px;
+}
+.precio {
+  margin: 10px;
+  color: rgb(213, 163, 24);
+  font-size: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.add {
+  background: white;
+  color: rgb(10, 9, 9);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.add:hover {
+  background-color: rgb(12, 206, 28);
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.del {
+  background: rgb(240, 227, 229);
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.del:hover {
+  background: #e74c3c;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.pay {
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.pay:hover {
+  background: #d1db0c;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+#carritoBox,
+#adminBox,
+#loginBox,
+#facturaBox {
+  background: rgba(200, 7, 7, 0.4);
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+}
+.content {
+  width: 50%;
+  justify-self: center;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #161414;
+  text-align: center;
+  background-color: #0e0b0b;
+}
+
+input {
+  display: block;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #3b5238;
+  width: 60%;
+  margin-bottom: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 5px green;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
