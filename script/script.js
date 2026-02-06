@@ -164,9 +164,9 @@ function pagar() {
 
   mensaje += `%0ATotal: ${total}Bs`;
 
-  let numero = "59173471090";
+  let numero = "5917829712";
 
-  let url = "https://wa.me/" + 59173471090 + "?text=" + mensaje;
+  let url = "https://wa.me/" + 59178297212 + "?text=" + mensaje;
 
   window.open(url, "_blank");
 }
